@@ -76,7 +76,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       final form = _formKey.currentState;
                       form!.save();
                       if (form.validate()) {
-                        Get.to(LoginScreen(
+                        Get.offAll(LoginScreen(
                             key: const Key('LoginScreen'),
                             email: _emailController.text,
                             password: _passwordController.text));

@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       if (form.validate()) {
                         if (widget.email == _emailController.text &&
                             widget.password == _passwordController.text) {
-                          Get.to(HomePage(
+                          Get.off(HomePage(
                             key: const Key('HomePage'),
                             loggedEmail: _emailController.text,
                             loggedPassword: _passwordController.text,
@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 TextButton(
                     key: const Key('ButtonLoginCreateAccount'),
-                    onPressed: () => Get.off(const SignUpPage(
+                    onPressed: () => Get.to(const SignUpPage(
                           key: Key('SignUpPage'),
                         )),
                     child: const Text('Create account'))

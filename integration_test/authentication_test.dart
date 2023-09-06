@@ -5,8 +5,7 @@ import 'package:integration_test/integration_test.dart';
 
 void main() {
   Future<Widget> createHomeScreen() async {
-    // WidgetsFlutterBinding.ensureInitialized();
-    // remove previous widget binding
+    WidgetsFlutterBinding.ensureInitialized();
     return const MyApp();
   }
 
