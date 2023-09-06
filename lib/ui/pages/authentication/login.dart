@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 TextButton(
                     key: const Key('ButtonLoginCreateAccount'),
-                    onPressed: () => Get.to(const SignUpPage(
+                    onPressed: () => Get.off(const SignUpPage(
                           key: Key('SignUpPage'),
                         )),
                     child: const Text('Create account'))
